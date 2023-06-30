@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+.attendance{
+  background-color: #E3E3E5;
+  width: 80vw;
+  height: 90vh;
+  padding: 2.5% 10%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.attendance .form-infor-customer{
+  height: 100%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 5px 5px #888888;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.attendance .form-infor-customer .content{
+  border: 10px solid black;
+  width: calc(100% - 20px);
+  border-radius: 25px;
+  height: calc(100% - 20px);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.attendance .form-infor-customer .ant-row{
+  height: 100%;
+}
+.attendance .form-infor-customer .information-customer{
+  background-image: url('./assets/backgroundInfo.jpg');
+  background-size: 100% 100%;
+  padding: 5% 0 5% 5%;
+  border-radius: 20px;
+}
+.attendance .form-infor-customer .information-customer .layout{
+  border: 5px solid black;
+  border-right: none;
+  height: 100%;
+  width: calc(100% - 5px);
+  background-color: white;
+  border-radius: 25px 0 0 25px;
+}
+.list-imgae-customer .head{
+  padding: 1.5%;
+}
+.list-imgae-customer .head img{
+  width: 150px;
+  height: 80px;
+}
+.list-imgae-customer .list-iamge{
+  width: 99%;
+  height: 600px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  overflow-y: auto;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-imgae-customer .list-iamge .customer{
+  width: 30%;
+  height: 200px;
+  margin: 1.5%;
+  border-radius: 20px;
+  border: 1px solid black;
+  cursor: pointer;
 }
